@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+ vertical-align: middle;
+}
+
+.clr{
+    clear: both;
+}
+
+.full-wrapper{
+    width: 100%;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* =========================
+common css end  
+============================ */
+@font-face{
+    font-family: 'Montserrat-Bold';
+    src: url(../font/Montserrat-Bold.ttf);
+}
+
+@font-face{
+    font-family: 'Montserrat-rag';
+    src: url(../font/Montserrat-Regular.ttf);
+}
+@font-face{
+    font-family: 'KaushanScript-rag';
+    src: url(../font/kaushan/KaushanScript-Regular.ttf);
+}
+
+
+.manu-bg{
+    height: 50px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 999;
+}
+
+.manu-bg .manu{
+    height: 50px;
+}
+
+.manu-bg .manu .logo-bg{
+    width: 105px;
+    height: 50px;
+    text-align: center;
+    float: left;
+
+}
+
+.manu-bg .manu .logo-bg .logo a{
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffff;
+    text-transform: capitalize;
+    line-height: 50px;
+    font-family: 'Montserrat-Bold';
+}
+.manu-bg .manu .logo-bg .logo span{
+    text-transform: uppercase;
+}
+
+.manu-bg .manu .manu-bar{
+    height: 50px;
+    width: 1095px;
+    float: left;
+    display: inline-block;
+}
+
+.manu-bg .manu .manu-bar .manu-items  ul{
+    float: right;
+}
+
+.manu-bg .manu .manu-bar .manu-items  ul li{
+    float: left;
+    margin-right: 55px;
+    /* position: relative; */
+    
+}
+
+
+
+.manu-bg .manu .manu-bar .manu-items  ul li:last-of-type{
+    margin-right: 0%;
+}
+
+.manu-bg .manu .manu-bar .manu-items  ul li a{
+    color: #fff;
+    font-family: 'Montserrat-rag';
+    font-size: 14px;
+    line-height: 50px;
+    text-transform: capitalize;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+
+.manu-bg .manu .manu-bar .manu-items  ul li:hover{
+    color: #fce38a;
+    border-bottom: 3px solid #fce38a;
+}
+
+.manu-bg .manu .manu-bar .manu-items  ul li:hover a{
+    color: #fce38a;
+}
+
+.manu-bg .manu .manu-bar .manu-items  ul li:hover:nth-child(6){
+    border-bottom: none;
+}
+
+.manu-bg .manu .manu-bar .manu-items  ul li:hover:last-child{
+    border-bottom: none;
+}
+
+/* =========================
+manu css end 
+============================ */
+.cover-bg{
+    height: 1000px;
+    background: url(../images/cover-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.cover-bg::after{
+    content: '';
+    width: 100%;
+    height: 1000px;
+    position: absolute;
+    background-image: linear-gradient(to bottom, #e78182, #efd98a);
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+.cover-bg .cover{
+    position: relative;
+    z-index: 10;
+    text-align: center;
+}
+
+.cover-bg .cover h1{
+    font-family: 'KaushanScript-rag';
+    color: #fff;
+    font-size: 72px;
+    padding-top: 170px;
+    text-transform: capitalize;
+    padding-bottom: 60px;
+}
+.cover-bg .cover p{
+    font-family: 'Montserrat-Bold';
+    color: #fff;
+    font-size: 150px;
+    line-height: 140px;
+    padding: 0px 116px;
+    text-transform: capitalize;
+    position: relative;
+    padding-bottom: 125px;
+}
+
+.cover-bg .cover p::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background: #fff;
+    top: 345px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cover-bg .cover a{
+    text-transform: uppercase;
+    color: #fff;
+    tab-size: 14px;
+    padding: 10px 30px;
+    border: 4px solid #fff;
+    margin-top: 100px;
+}
+
+.cover-bg .cover i{
+    margin-top: 110px;
+    color: #fff;
+}
+.cover-bg .cover .active{
+    color: #ff2828;
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+.cover-bg .cover .cover-items{
+    position: absolute;
+    top: 235px;
+    left: 610px;
+    text-align: center;
+} */
+
+/* .cover-bg .cover .cover-items p{
+    font-family: 'KaushanScript-rag';
+    font-size: 72px;
+    color: #ffff;
+}
+
+.cover-bg .cover .cover-items h1{
+    font-family: 'Montserrat-Bold';
+    font-size: 150px;
+    color: #ffff;
+    text-transform: capitalize;
+    padding: 0px 60px;
+} */
+
+/* =========================
+cover css end 
+============================ */
+
+
+
