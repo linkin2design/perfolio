@@ -44,6 +44,24 @@ common css end
     src: url(../font/kaushan/KaushanScript-Regular.ttf);
 }
 
+/*=========================
+ font css end  
+===========================*/
+.section-head{
+    font-family: 'KaushanScript-rag';
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.section-head span{
+    text-transform: uppercase;
+}
+
+/*========================
+ section head css end  
+==========================*/
+
 
 .manu-bg{
     height: 50px;
@@ -90,11 +108,7 @@ common css end
 .manu-bg .manu .manu-bar .manu-items  ul li{
     float: left;
     margin-right: 55px;
-    /* position: relative; */
-    
 }
-
-
 
 .manu-bg .manu .manu-bar .manu-items  ul li:last-of-type{
     margin-right: 0%;
@@ -140,6 +154,7 @@ manu css end
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    margin-bottom: 95px;
     position: relative;
 }
 
@@ -198,6 +213,17 @@ manu css end
     padding: 10px 30px;
     border: 4px solid #fff;
     margin-top: 100px;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+.cover-bg .cover a:hover{
+    color: #ff2828;
+    border: 6px solid #ff2828;
+    font-weight: 600;
 }
 
 .cover-bg .cover i{
@@ -208,40 +234,677 @@ manu css end
     color: #ff2828;
 }
 
-
-
-
-
-
-
-
-
-
-/* 
-.cover-bg .cover .cover-items{
-    position: absolute;
-    top: 235px;
-    left: 610px;
-    text-align: center;
-} */
-
-/* .cover-bg .cover .cover-items p{
-    font-family: 'KaushanScript-rag';
-    font-size: 72px;
-    color: #ffff;
+/*===========================
+ cover css  end  
+==============================*/
+.about-bg{
+    height: 550px;
+}
+.about-bg .about{
+    height: 550px;
 }
 
-.cover-bg .cover .cover-items h1{
-    font-family: 'Montserrat-Bold';
-    font-size: 150px;
-    color: #ffff;
-    text-transform: capitalize;
-    padding: 0px 60px;
-} */
+.about-bg .about .section-head span{
+    text-transform: uppercase;
+}
 
-/* =========================
-cover css end 
-============================ */
+.about-bg .about h2{
+    font-family: 'Montserrat-Bold';
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+}
+.about-bg .about h2::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background: #f38181;
+    margin-bottom: 45px;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about-bg .about p {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    padding: 30px 105px;
+}
+
+.about-bg .about .about-gallery .images-items:nth-child(2){
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.about-bg .about .about-gallery .images-items{
+    width: 380px;
+    height: 250px;
+    float: left;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.about-bg .about .about-gallery .images-items::before{
+    content: '';
+    position: absolute;
+    height: 0px;
+    width: 10px;
+    background: #95e1d3;
+    right: -10px;
+    bottom: -10px;
+    z-index: 11;
+    visibility: hidden;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+.about-bg .about .about-gallery .images-items:hover::before{
+    visibility: visible;
+    height: 240px;
+}
+
+.about-bg .about .about-gallery .images-items::after{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 10px;
+    background: #95e1d3;
+    bottom: -10px;
+    right: 0;
+    visibility: hidden;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+.about-bg .about .about-gallery .images-items:hover:after{
+    visibility: visible;
+    width: 370px;
+}
+
+.about-bg .about .about-gallery .images-items img{
+    width: 100%;
+    height: 100%;
+}
+
+.about-bg .about .about-gallery .images-items .user-icon{
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    background:linear-gradient(to bottom, #e78182, #efd98a);
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    text-align: center;
+    visibility: hidden;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+.about-bg .about .about-gallery .images-items:hover .user-icon{
+    visibility: visible;
+    height: 100%;
+}
+
+.about-bg .about .about-gallery .images-items .user-icon i{
+    color: #fff;
+    margin-top: 105px;
+}
+
+.about-bg .about .about-gallery .images-items .user-icon h3{
+    color: #fff;
+    font-family: 'Montserrat-Bold';
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+}
+
+/*============================
+ about css end  
+===============================*/
+.award-bg{
+    height: 270px;
+    background: #95e1d3;
+    margin-bottom: 50px;
+}
+
+.award-bg .award{
+    height: 270px;
+}
+
+.award-bg .award .award-items{
+    width: 240px;
+    height: 100%;
+    text-align: center;
+    float: left;
+}
+.award-bg .award .award-items h4{
+    font-family: 'Montserrat-Bold';
+    font-size: 72px;
+    color: #fff;
+    padding-top: 75px;
+}
+.award-bg .award .award-items p{
+    font-family: 'Montserrat-rag';
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/*============================
+ award css end  
+===============================*/
+.service-bg{
+    height: 480px;
+}
+.service-bg .service{
+    height: 480px;
+}
+
+.service-bg .service .section-head span{
+    text-transform: uppercase;
+}
+.service-bg .service h2{
+    font-family: 'Montserrat-Bold';
+    font-size: 30px;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+    position: relative;
+}
+
+.service-bg .service h2::after{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background: #f38181;
+    margin-bottom: 45px;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.service-bg .service .service-items{
+    height: 260px;
+    width: 100%;
+}
+
+.service-bg .service .service-items .service-section-1{
+    height: 130px;
+    width: 380px;
+    float: left;
+    border-bottom: 1px solid #333;
+}
+.service-bg .service .service-items .service-section-1:nth-child(2){
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.service-bg .service .service-items .service-section-1 .service-logo{
+    width: 90px;
+    height: 100%;
+    text-align: center;
+    float: left;
+}
+
+.service-bg .service .service-items .service-section-1 .service-content{
+    width: 100%;
+    height: 100%;
+}
+
+.service-bg .service .service-items .service-section-1 .service-content h4{
+    font-family: 'Montserrat-rag';
+    color: #333;
+    margin-bottom: 15px;
+
+}
+
+.service-bg .service .service-items .service-section-1 .service-content p{
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    padding-bottom: 45px;
+
+}
+
+
+
+
+
+
+
+
+.service-bg .service .service-items .service-section-2{
+    height: 130px;
+    width: 380px;
+    float: left;
+}
+.service-bg .service .service-items .service-section-2:nth-child(5){
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.service-bg .service .service-items .service-section-2 .service-logo{
+    width: 90px;
+    height: 100%;
+    padding-top: 35px;
+    text-align: center;
+    float: left;
+    box-sizing: border-box;
+}
+
+.service-bg .service .service-items .service-section-2 .service-content{
+    width: 100%;
+    height: 100%;
+}
+
+.service-bg .service .service-items .service-section-2 .service-content h4{
+    padding-top: 35px;
+    font-family: 'Montserrat-rag';
+    color: #333;
+    margin-bottom: 15px;
+
+}
+
+.service-bg .service .service-items .service-section-2 .service-content p{
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    padding-bottom: 45px;
+
+}
+
+
+/*============================
+ award css end  
+===============================*/
+.unic-bg{
+    height: 850px;
+    background: url(../images/cover-unic-design.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 95px;
+    position: relative;
+}
+
+.unic-bg::after{
+    content: '';
+    height: 850px;
+    width: 100%;
+    background: #fff;
+    opacity: 0.85;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8;
+}
+
+.unic-bg .unic{
+    height: 850px;
+    z-index: 10;
+    padding-top: 100px;
+    position: relative;
+}
+
+.unic-bg .unic h2{
+    font-family: 'Montserrat-Bold';
+    font-size: 30px;
+    color: #333;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.unic-bg .unic h2::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background: #f38181;
+    margin-bottom: 45px;
+    top: 213px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.unic-bg .unic .devices{
+    width: 100%;
+    /* height: 580; */
+    position: absolute;
+    top: 268px;
+    left: 0;
+    text-align: center;
+}
+
+.unic-bg .unic .devices .devices-items .mobi {
+    position: absolute;
+    bottom: -94px;
+    left: 729px;
+}
+
+/*============================
+unic design css end  
+===============================*/
+.wedo-bg{
+    height: 680px;
+}
+.wedo-bg .wedo{
+    height: 680px;
+    margin-bottom: 100px;
+}
+
+.wedo-bg .wedo h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Montserrat-Bold';
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.wedo-bg .wedo h2::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background: #f38181;
+    margin-bottom: 45px;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wedo-bg .wedo p{
+    text-transform:capitalize;
+    text-align: center;
+    padding-top: 35px;
+    color: #333;
+    /* margin-bottom: 90px; */
+}
+.wedo-bg .wedo p::first-letter{
+    text-transform: uppercase;
+}
+
+.wedo-bg .wedo .wedo-items{
+    width: 100%;
+    height: 380px;
+    margin-top: 107px;
+}
+
+.wedo-bg .wedo .wedo-items .wedo-img{
+    width: 570px;
+    height: 380px;
+    float: left;
+    margin-right: 30px;
+}
+
+.wedo-bg .wedo .wedo-items .wedo-text{
+    width: 600px;
+    height: 380px;
+    float: left;
+}
+
+.wedo-bg .wedo .wedo-items .wedo-text .photography{
+    width: 100%;
+    height: 60px;
+    border: 1px solid rgba(51, 51, 51, 0.616);
+    margin-top: 6px;
+}
+.wedo-bg .wedo .wedo-items .wedo-text .photography:nth-of-type(1){
+    margin-top: 0px;
+}
+.wedo-bg .wedo .wedo-items .wedo-text .photography img{
+    padding-top: 15px;
+    float: left;
+    margin-right: 20px;
+}
+
+.wedo-bg .wedo .wedo-items .wedo-text .photography h4{
+    font-size: 14px;
+    font-family: 'Montserrat-rag';
+    color: #333;
+    line-height: 60px;
+    float: left;
+}
+.wedo-bg .wedo .wedo-items .wedo-text .photography i{
+    float: right;
+    line-height: 60px;
+    color: #333;
+    margin-right: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.wedo-bg .wedo .wedo-items .wedo-text .photography-text{
+    width: 100%;
+    height: 180px;
+    border: 1px solid rgba(51, 51, 51, 0.616);
+}
+
+.wedo-bg .wedo .wedo-items .wedo-text .photography-text p{
+    font-size: 15px;
+    line-height: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+
+
+
+/*============================
+wedo css end  
+===============================*/
+.jon-bg{
+    width: 100%;
+    height: 290px;
+    background: #f8f8f8;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.jon-bg .jon{
+    height: 290px;
+
+    position: relative;
+    
+}
+
+.jon-bg .jon .right-mark{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    color: #333;
+}
+.jon-bg .jon .left-mark{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    color: #333;
+}
+
+.jon-bg .jon .jon-logo{
+    height: 290px;
+    width: 238px;
+    margin-left: 73px;
+    text-align: center;
+    float: left;
+    
+}
+
+.jon-bg .jon .jon-logo img{
+    margin-top: 100px;
+    padding: 18px;
+    border: 3px solid #95e1d3;
+}
+
+.jon-bg .jon .jon-text{
+    height: 290px;
+    width: 770px;
+    float: left;
+}
+
+.jon-bg .jon .jon-text p {
+    font-size: 23px;
+    line-height: 36px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    padding-top: 91px;
+}
+
+.jon-bg .jon .jon-text h4{
+    text-transform: capitalize;
+    font-size: 24px;
+    color: #333;
+    font-family: 'KaushanScript-rag';
+    margin-left: 80px;
+    padding-top: 15px;
+    position: relative;
+}
+
+.jon-bg .jon .jon-text h4::after {
+    content: "";
+    position: absolute;
+    top: 36px;
+    left: -67px;
+    width: 60px;
+    height: 3px;
+    background: #f38181;
+}
+
+/*============================
+jon doe css end  
+===============================*/
+.team-bg{
+    height: 840px;
+}
+
+.team-bg .team{
+    height: 840px;
+    margin-bottom: 100px;
+}
+.team-bg .team h2{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Montserrat-Bold';
+    color: #333;
+    text-align: center;
+    padding-bottom: 80px;
+    position: relative;
+}
+.team-bg .team h2::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background: #f38181;
+    margin-bottom: 45px;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.team-bg .team p{
+    text-transform:capitalize;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+ }
+
+ .team-bg .team .team-gallery{
+     height: 545px;
+     margin-top: 90px;
+ }
+
+
+
+ .team-bg .team .team-gallery .gallery-items{
+     width: 380px;
+     height: 470px;
+     float: left;
+     position: relative;
+}
+
+.team-bg .team .team-gallery .gallery-items:nth-child(2){
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+ .team-bg .team .team-gallery .gallery-items:hover .gallery-overlay{
+    visibility: visible;
+ }
+
+ .team-bg .team .team-gallery .gallery-items .gallery-overlay{
+    position: absolute; 
+    background: linear-gradient(to bottom, #e78182, #efd98a);
+    opacity: 0.9;
+    width: 380px;
+    height: 470px;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    text-align: center;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+ }
+
+ .team-bg .team .team-gallery .gallery-items .gallery-overlay ul li i {
+    font-size: 15px;
+    padding: 20px 20px;
+    color: #e78182;
+    line-height: 0px;
+    background: #efd98a;
+    margin-top: 225px;
+    cursor: pointer;
+}
+
+.team-bg .team .team-gallery .gallery-items .gallery-overlay ul li i:hover {
+    color: #fff;
+    background: #e78182;
+}
+
+ .team-bg .team .team-gallery .gallery-items h4{
+     text-align: center;
+     margin-top: 15px;
+     padding-bottom: 25px;
+     font-family: 'Montserrat-Bold';
+     font-size: 14px;
+     text-transform: capitalize;
+ }
+ .team-bg .team .team-gallery .gallery-items p{
+    text-transform:capitalize;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 14px;
+ }
+ .brand-bg{
+     height: 250px;
+     background: ;
+ }
+
+
+
+/*============================
+team css end  
+===============================*/
 
 
 
