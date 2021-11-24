@@ -822,6 +822,8 @@ jon doe css end
     text-transform:capitalize;
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 14px;
     color: #333;
  }
 
@@ -846,6 +848,7 @@ jon doe css end
 
  .team-bg .team .team-gallery .gallery-items:hover .gallery-overlay{
     visibility: visible;
+    height: 470px;
  }
 
  .team-bg .team .team-gallery .gallery-items .gallery-overlay{
@@ -853,7 +856,7 @@ jon doe css end
     background: linear-gradient(to bottom, #e78182, #efd98a);
     opacity: 0.9;
     width: 380px;
-    height: 470px;
+    height: 0px;
     top: 0;
     left: 0;
     visibility: hidden;
@@ -892,18 +895,608 @@ jon doe css end
     text-transform:capitalize;
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    font-style: italic;
     color: #333;
     font-size: 14px;
  }
- .brand-bg{
-     height: 250px;
-     background: ;
- }
-
 
 
 /*============================
 team css end  
+===============================*/
+
+ .brand-bg{
+     height: 250px;
+     background: #f8f8f8;
+     margin: 100px 0px;
+ }
+ .brand-bg .brand{
+     height: 250px;
+ } 
+ .brand-bg .brand .brand-items{
+     height: 250px;
+     width: 130px;
+     float: left;
+     margin-right: 84px;
+     line-height: 250px;
+ }
+
+ .brand-bg .brand .brand-items:last-child{
+     margin-right: 0px;
+ }
+
+/*============================
+brand css end  
+===============================*/
+.our-work-bg{
+    height: 200px;
+    margin-bottom: 50px;
+}
+
+.our-work-bg .our-work{
+    height: 200px;
+}
+ 
+ .work-heading h2{
+    font-family: 'Montserrat-Bold';
+    font-size: 30px;
+    color: #333;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+ }
+
+ .work-heading h2::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    margin-bottom: 45px;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%, -50%);}
+.work-pragraph{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.work-pragraph p{
+    text-transform:capitalize;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    color: #333;
+}
+
+
+/*============================
+our work css end  
+===============================*/
+.work-bg{
+    height: 790px;
+}
+
+.work-bg .work-gallery-left{
+    height: 780px;
+    width: 50%;
+    float: left;
+    margin-bottom: 100px;
+}
+.work-bg .work-gallery-left .ll-part{
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+.work-bg .work-gallery-left .ll-part .lu{
+    height: 50%;
+    width: 100%;
+    position: relative;
+}
+.work-bg .work-gallery-left .ll-part .ld{
+    height: 50%;
+    width: 100%;
+    position: relative;
+}
+.work-bg .work-gallery-left .r-part{
+    height: 100%;
+    width: 50%;
+    float: right;
+}
+.work-bg .r-part .ru{
+    height: 50%;
+    width: 100%;
+    position: relative;
+}
+.work-bg .r-part .rd{
+    height: 50%;
+    width: 100%;
+    position: relative;
+}
+.work-bg .work-gallery-right{
+    height: 780px;
+    width: 50%;
+    float: right;
+    margin-bottom: 100px;
+}
+.work-bg .work-gallery-right .l-part {
+    height: 100%;
+    width: 50%;
+    float: left;
+    position: relative;
+}
+.work-bg .work-gallery-right .r-part{
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+
+.work-bg .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: linear-gradient(#f38181, #fce38a);
+    opacity: 0.9;
+    visibility: hidden;
+}
+.work-bg .overlay .image{
+    text-align: center;
+    line-height: 390px;
+}
+.work-bg .overlay .txt{
+    text-align: center;
+    margin-top: -160px;
+    line-height: 24px;
+}
+
+.work-bg .l-part .overlay .image{
+    text-align: center;
+    line-height: 780px;
+}
+.work-bg .l-part .overlay .txt{
+    text-align: center;
+    margin-top: -360px;
+    line-height: 24px;
+}
+
+
+.work-bg .overlay .txt .ttu{
+    text-transform: uppercase;
+    font-family: 'mont-bold';
+    color: #ffffff;
+}
+.work-bg .overlay .txt .ttc{
+    font-family: 'arial';
+    color: #ffffff;
+}
+.work-bg .overlay .txt .ttc::first-letter{
+    text-transform: uppercase;
+}
+
+
+.work-bg .lu:hover .overlay{
+    visibility: visible;
+}
+.work-bg .ld:hover .overlay{
+    visibility: visible;
+}
+.work-bg .ru:hover .overlay{
+    visibility: visible;
+}
+.work-bg .rd:hover .overlay{
+    visibility: visible;
+}
+.work-bg .l-part:hover .overlay{
+    visibility: visible;
+}
+
+/*============================
+our work gallery css end  
+===============================*/
+
+.earle-bg{
+    width: 100%;
+    height: 290px;
+    background: #f8f8f8;
+    margin-bottom: 100px;
+}
+
+.earle-bg .earle{
+    height: 290px;
+
+    position: relative;
+    
+}
+
+.earle-bg .earle .right-mark{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    color: #333;
+}
+.earle-bg .earle .left-mark{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    color: #333;
+}
+
+.earle-bg .earle .earle-logo{
+    height: 290px;
+    width: 238px;
+    margin-left: 73px;
+    text-align: center;
+    float: left;
+    
+}
+
+.earle-bg .earle .earle-logo img {
+    margin-top: 45px;
+    padding-right: 28px;
+}
+
+.earle-bg .earle .earle-text{
+    height: 290px;
+    width: 770px;
+    float: left;
+}
+
+.earle-bg .earle .earle-text p {
+    font-size: 23px;
+    line-height: 36px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    padding-top: 91px;
+}
+
+.earle-bg .earle .earle-text h4{
+    text-transform: capitalize;
+    font-size: 24px;
+    color: #333;
+    font-family: 'KaushanScript-rag';
+    margin-left: 80px;
+    padding-top: 15px;
+    position: relative;
+}
+
+.earle-bg .earle .earle-text h4::after {
+    content: "";
+    position: absolute;
+    top: 36px;
+    left: -67px;
+    width: 60px;
+    height: 3px;
+    background: #f38181;
+}
+
+/*============================
+our work gallery css end  
+===============================*/
+.happy-clnt-bg{
+    height: 830px;
+    background: url(../images/happy-client-cover.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 100px;
+    position: relative;
+    z-index: -1;
+}
+
+.happy-clnt-bg::after{
+    content: "";
+    position: absolute;
+    height: 830px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    opacity: 0.8;
+    
+}
+
+.happy-clnt{
+    z-index: 1;
+    position: relative;
+}
+
+.happy-clnt .section-head{
+    padding-top: 100px;
+}
+
+.happy-clnt .clnt-heading h2{
+    font-family: 'Montserrat-Bold';
+    font-size: 30px;
+    color: #333;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.happy-clnt .clnt-heading  h2::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background: #f38181;
+    margin-bottom: 45px;
+    top: 213px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.clnt-bio{
+    width: 100%;
+    height: 440px;
+    margin-top: 100px;
+}
+
+.clnt-nmber{
+    width: 50%;
+    height: 440px;
+    float: left;
+}
+
+.clnt-dtls{
+    width: 100%;
+    height: 50%;
+}
+
+.clnt-dtls h4{
+    font-family: 'Montserrat-rag';
+    font-size: 14px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.clnt-dtls span{
+    font-family:'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.clnt-dtls span::after{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background: #f38181;
+    margin-bottom: 45px;
+    top: 40px;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.clnt-dtls p{
+    font-family:'Roboto', sans-serif;
+    color: #333;
+    font-size: 14px;
+    margin-top: 40px;
+
+}
+
+
+.clnt-picture{
+    width: 174px;
+    height: 100%;
+    text-align: right;
+    float: left;
+    
+}
+
+.clnt-picture img{
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+
+
+
+
+/*============================
+happy clicent css end  
+===============================*/
+.blog-bg{
+    height: 550px;
+}
+
+.blog-bg .blog{
+    height: 550px;
+}
+.blog-heading h2{
+    font-family: 'Montserrat-Bold';
+    font-size: 30px;
+    color: #333;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.blog-heading  h2::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background: #f38181;
+    margin-bottom: 45px;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.blog-dtls{
+    height: 400px;
+    width: 100%;
+    margin-top: 60px;
+}
+.blog-items{
+    width: 380px;
+    height: 400px;
+    float: left;
+    position: relative;
+}
+
+.blog-items:nth-child(2){
+    margin: 0 30px;
+}
+
+.blog-date {
+	width: 60px;
+	height: 70px;
+    background-color: #95e1d3;;
+	text-align: right;
+	position: absolute;
+	bottom: 170px;
+	left: -11px;
+}
+.blog-date p{
+    font-family:'Roboto', sans-serif;
+    font-style: italic;
+    color: #fff;
+    padding: 25px 9px;
+    text-transform: capitalize;
+}
+.blog-date p span{
+    font-family: 'Montserrat-Bold';
+}
+
+.blog-items .blog-text h4{
+    text-transform: capitalize;
+    font-family: 'Montserrat-rag';
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.blog-items .blog-text p{
+
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    color: #333;
+    margin-bottom: 30px;
+
+}
+
+.blog-items .blog-icon i{
+    padding: 0 10px;
+    color: #95e1d3;
+}
+
+.blog-items .blog-icon i span{
+    color: #333;
+    padding: 10px;
+}
+
+
+/*============================
+blog css end  
+===============================*/
+.map-bg{
+    height: 200px;
+    background: url(../images/map-banner.jpg);
+    margin: 50px 0;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+.map-bg::after{
+    content: '';
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    opacity: 0.8;
+    z-index: 8;
+}
+
+.map-bg .map{
+    height: 200px;
+    text-align: center;
+    z-index: 9;
+    position: relative;
+}
+
+.map-bg .map i {
+	color: #f38181;
+	font-size: 24px;
+	margin-top: 60px;
+	margin-bottom: 20px;
+    cursor: pointer;
+}
+.map-bg .map h4{
+    font-family: 'Montserrat-Bold';
+    color: #f38181;
+    font-size: 24px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.map-bg .map h4::after{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    background: #f38181;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/*============================
+map css end  
+===============================*/
+.footer-bg{
+    height: 440px;
+    margin-top: 100px; 
+    margin-bottom: 100px;
+}
+.footer-bg .footer{
+    height: 440px;
+    background: #95e1d3;
+}
+
+
+.footer-logo{
+    height: 440px;
+    width: 480px;
+    background: #e78182;
+    float: left;
+}
+.footer-blog{
+    height: 440px;
+    width: 370px;
+    background: #c44ef3;
+    float: left;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.footer-instagram{
+    height: 440px;
+    width: 290px;
+    background: #81e797;
+    float: left;
+}
+
+/*============================
+Footer css end  
 ===============================*/
 
 
