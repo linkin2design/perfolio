@@ -1,6 +1,6 @@
-*{
-    margin: 0;
+*{  
     padding: 0;
+    margin: 0;
 }
 
 ul{
@@ -12,7 +12,7 @@ a{
 }
 
 img{
- vertical-align: middle;
+    vertical-align: middle;
 }
 
 .clr{
@@ -24,1480 +24,1269 @@ img{
 }
 
 .container{
-    width: 1200px;
+    width: 1170px;
     margin: 0 auto;
-}
-/* =========================
-common css end  
-============================ */
-@font-face{
-    font-family: 'Montserrat-Bold';
-    src: url(../font/Montserrat-Bold.ttf);
-}
-
-@font-face{
-    font-family: 'Montserrat-rag';
-    src: url(../font/Montserrat-Regular.ttf);
-}
-@font-face{
-    font-family: 'KaushanScript-rag';
-    src: url(../font/kaushan/KaushanScript-Regular.ttf);
 }
 
 /*=========================
- font css end  
-===========================*/
-.section-head{
-    font-family: 'KaushanScript-rag';
-    font-size: 24px;
-    color: #333;
-    text-align: center;
-    margin-bottom: 10px;
-}
-.section-head span{
-    text-transform: uppercase;
+  common css   end
+============================*/
+
+@font-face{
+    font-family: 'ubu-rag';
+    src: url(../font/Ubuntu-Regular.ttf);
 }
 
-/*========================
- section head css end  
-==========================*/
+@font-face{
+    font-family: 'ubu-med';
+    src: url(../font/Ubuntu-Medium.ttf);
+}
+
+@font-face{
+    font-family: 'ubu-light';
+    src: url(../font/Ubuntu-Light.ttf);
+}
+
+
+@font-face{
+    font-family: 'abril';
+    src: url(../font/abril/AbrilFatface-Regular.ttf);
+}
+
+/*=========================
+  font import css  end
+============================*/
+.br{
+    border-right: 1px solid #dddddd;
+}
+.bb{
+    border-bottom: 1px solid #dddddd;
+}
+/*=========================
+boder css  end
+============================*/
+
+.pt-20{
+    padding-top: 20px;
+}
+.pt-50{
+    padding-top: 50px;
+}
+/*=========================
+space css  end
+============================*/
+
+.side-text{
+    position: absolute;
+}
+
+.side-text h3{
+    font-family: abril;
+    color: rgba(34, 34, 34, 0.05);
+    text-transform: uppercase;
+    writing-mode: sideways-lr;
+    -webkit-writing-mode: sideways-lr;
+    -ms-writing-mode: sideways-lr;
+    white-space: nowrap;
+}
+
+/*=========================
+side text css  end
+============================*/
+.cta-btn{
+    display: inline-block;
+    font-family: 'ubu-med';
+    font-size: 20px;
+    line-height: 40px;
+    padding: 0 20px;
+    text-transform: capitalize;
+    color: #ffff;
+    border-radius: 2px;
+    background: linear-gradient(to right,#00bbff,#0066e7 );
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.cta-btn:hover{
+    background: linear-gradient(to left,#00bbff,#0066e7 );
+}
+
+
+/*=========================
+cta-btn css  end
+============================*/
+.section-head h3{
+    font-family: 'abril';
+    font-size: 32px;
+    text-transform: capitalize;
+    color: #222;
+    margin-bottom: 55px;
+}
+/*=========================
+section head css  end
+============================*/
 
 
 .manu-bg{
-    height: 50px;
-    background-color: transparent;
+    height: 60PX;
     position: absolute;
-    z-index: 999;
+    top: 30px;
+    left: 0;
+    z-index: 9999;
+
 }
 
 .manu-bg .manu{
-    height: 50px;
+    height: 60PX;
 }
 
-.manu-bg .manu .logo-bg{
-    width: 105px;
-    height: 50px;
-    text-align: center;
+.manu-bg .manu .logo{
+    width: 50px;
+    height: 60px;
     float: left;
-
 }
-
-.manu-bg .manu .logo-bg .logo a{
-    font-size: 30px;
-    font-weight: 600;
-    color: #ffff;
-    text-transform: capitalize;
-    line-height: 50px;
-    font-family: 'Montserrat-Bold';
-}
-.manu-bg .manu .logo-bg .logo span{
-    text-transform: uppercase;
-}
-
-.manu-bg .manu .manu-bar{
-    height: 50px;
-    width: 1095px;
+.manu-bg .manu .manu-list{
+    width: 1120PX;
+    height: 60PX;
     float: left;
-    display: inline-block;
 }
 
-.manu-bg .manu .manu-bar .manu-items  ul{
+.manu-bg .manu .manu-list ul{
     float: right;
 }
 
-.manu-bg .manu .manu-bar .manu-items  ul li{
+.manu-bg .manu .manu-list ul li{
     float: left;
-    margin-right: 55px;
 }
-
-.manu-bg .manu .manu-bar .manu-items  ul li:last-of-type{
-    margin-right: 0%;
-}
-
-.manu-bg .manu .manu-bar .manu-items  ul li a{
-    color: #fff;
-    font-family: 'Montserrat-rag';
-    font-size: 14px;
-    line-height: 50px;
+.manu-bg .manu .manu-list ul li a{
+    line-height: 60px;
     text-transform: capitalize;
+    font-family: 'ubu-rag';
+    font-size: 20px;
+    padding-left: 48px;
+    color:#444444;
     transition: all linear 0.4s;
     -webkit-transition: all linear 0.4s;
     -moz-transition: all linear 0.4s;
     -ms-transition: all linear 0.4s;
     -o-transition: all linear 0.4s;
 }
-
-
-.manu-bg .manu .manu-bar .manu-items  ul li:hover{
-    color: #fce38a;
-    border-bottom: 3px solid #fce38a;
+.manu-bg .manu .manu-list ul li a:hover{
+    color: #00bbff;
+}
+.manu-bg .manu .manu-list ul li .active{
+    color: #00bbff;
 }
 
-.manu-bg .manu .manu-bar .manu-items  ul li:hover a{
-    color: #fce38a;
-}
+/*=========================
+manu css  end
+============================*/
 
-.manu-bg .manu .manu-bar .manu-items  ul li:hover:nth-child(6){
-    border-bottom: none;
-}
-
-.manu-bg .manu .manu-bar .manu-items  ul li:hover:last-child{
-    border-bottom: none;
-}
-
-/* =========================
-manu css end 
-============================ */
-.cover-bg{
-    height: 1000px;
-    background: url(../images/cover-image.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 95px;
+.banner-bg{
+    background-color: #f5f5f5;
+    height: 600px;
     position: relative;
 }
 
-.cover-bg::after{
+.banner-bg .side-text {
+	top: -6px;
+	left: -39px;
+}
+
+.banner-bg .side-text h3{
+    font-size: 116px;
+}
+
+.banner-bg .banner{
+    height: 600px;
+}
+
+.banner-bg .banner .banner-chat{
+    width: 270px;
+    height: 600px;
+    float: left;
+}
+
+.banner-bg .banner .banner-chat .chat-form .form{
+    background: #fff;
+    height: 35px;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+    box-shadow: 0px 5px 10px 0px rgb(0, 0, 0,0.05);
+
+}
+.banner-bg .banner .banner-chat .chat-form .form input{
+    width: 120px;
+    height: 32px;
+    margin-left: 20px;
+    border: none;
+    outline: none;
+}
+.banner-bg .banner .banner-chat .chat-form .form input:focus{
+    color: #444;
+}
+
+.banner-bg .banner .banner-chat .chat-form .form .form-button{
+    float: right;
+}
+
+.banner-bg .banner .banner-chat .chat-form .form button{
+    background: none;
+    border: none;
+    margin-right: 10px;
+
+}
+.banner-bg .banner .banner-chat .chat-form .form button:last-of-type{
+    margin: 0 20px;
+}
+
+.banner-bg .banner .banner-chat .chat-form .form button i{
+    line-height: 35px;
+    font-size: 16px;
+}
+
+
+
+.banner-bg .banner .banner-person{
+    width: 370px;
+    height: 600px;
+    float: left;
+    margin: 0 30px;
+    position: relative;
+}
+.banner-bg .banner .banner-person::before {
     content: '';
-    width: 100%;
-    height: 1000px;
+    width: 10px;
+    height: 185px;
+    background: #00bbff;
     position: absolute;
-    background-image: linear-gradient(to bottom, #e78182, #efd98a);
-    opacity: 0.8;
-    top: 0;
-    left: 0;
-    z-index: 9;
+    top: 168px;
+    left: 48px;
 }
 
-.cover-bg .cover{
+.banner-bg .banner .banner-person::after {
+    content: '';
+    width: 10px;
+    height: 373px;
+    background: #0066e7;
+    position: absolute;
+    top: 168px;
+    right: 48px;
+    z-index: 100;
+}
+
+
+.banner-bg .banner .banner-person .banner-person-border{
     position: relative;
-    z-index: 10;
+    width: 370px;
+    height: 600px;
+}
+
+.banner-bg .banner .banner-person .banner-person-border::after {
+    content: '';
+    width: 50px;
+    height: 10px;
+    background: #0066e7;
+    position: absolute;
+    right: 48px;
+    bottom: 49px;
+}
+
+.banner-bg .banner .banner-person .banner-person-border::before {
+    content: '';
+    width: 274px;
+    height: 10px;
+    background: linear-gradient(to right,#00bbff,#0066e7 );
+    position: absolute;
+    right: 48px;
+    top: 158px;
+}
+
+.banner-bg .banner .banner-person img{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 90;
+}
+.banner-bg .banner .banner-person .chat-box {
+	position: absolute;
+	top: 251px;
+	left: 18px;
+	z-index: 100;
+}
+.banner-bg .banner .banner-person .chat-box i{
+    width: 70px;
+    height: 70px;
+    background: #ffff;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    line-height: 70px;
+    font-size: 32px;
+    color: #00bbff;
+}
+
+.banner-bg .banner .banner-text{
+    width: 470px;
+    height: 600px;
+    float: left;
     text-align: center;
 }
 
-.cover-bg .cover h1{
-    font-family: 'KaushanScript-rag';
-    color: #fff;
-    font-size: 72px;
-    padding-top: 170px;
+.banner-bg .banner .banner-text p{
+    font-family: 'ubu-light';
+    font-size: 20px;
+    color: #00bbff;
     text-transform: capitalize;
-    padding-bottom: 60px;
+    padding-top: 205px;
 }
-.cover-bg .cover p{
-    font-family: 'Montserrat-Bold';
-    color: #fff;
-    font-size: 150px;
-    line-height: 140px;
-    padding: 0px 116px;
+
+.banner-bg .banner .banner-text h1{
+    font-family: 'abril';
+    font-size: 50px;
+    color: #00bbff;
     text-transform: capitalize;
-    position: relative;
-    padding-bottom: 125px;
+    margin-top: -5px;
+}
+.banner-bg .banner .banner-text h6{
+    font-family: 'ubu-mrd';
+    font-size: 16px;
+    color: #444444;
+    text-transform: capitalize;
 }
 
-.cover-bg .cover p::after {
-    content: '';
-    position: absolute;
-    width: 60px;
-    height: 3px;
-    background: #fff;
-    top: 345px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.banner-bg .banner .banner-text h6 span{
+    margin: 0 12px;
+}
+.banner-bg .banner .banner-text .cta-btn{
+    margin-top: 30px;
 }
 
-.cover-bg .cover a{
-    text-transform: uppercase;
-    color: #fff;
-    tab-size: 14px;
-    padding: 10px 30px;
-    border: 4px solid #fff;
-    margin-top: 100px;
-    transition: all linear 0.4s;
-    -webkit-transition: all linear 0.4s;
-    -moz-transition: all linear 0.4s;
-    -ms-transition: all linear 0.4s;
-    -o-transition: all linear 0.4s;
+.banner-bg .banner .banner-chat ul{
+    margin-top: 165px;
 }
 
-.cover-bg .cover a:hover{
-    color: #ff2828;
-    border: 6px solid #ff2828;
-    font-weight: 600;
+.banner-bg .banner .banner-chat ul li{
+    display: inline-block;
+    background: #f5f5f5;
+    font-family: 'ubu-rag';
+    font-size: 15px;
+    color: #444444;
+    line-height: 35px;
+    margin-bottom: 10px;
+    padding: 0 20px;
+    box-shadow: 0px 5px 10px 0px rgb(0, 0, 0,0.05);
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
 }
 
-.cover-bg .cover i{
-    margin-top: 110px;
-    color: #fff;
-}
-.cover-bg .cover .active{
-    color: #ff2828;
+.banner-bg .banner .banner-chat ul li:nth-child(1) {
+    margin-left: 83px;
+    opacity: 0.4;
 }
 
-/*===========================
- cover css  end  
-==============================*/
+.banner-bg .banner .banner-chat ul li:nth-child(2){
+    margin-left: -50px;
+    opacity: 0.6;
+}
+
+.banner-bg .banner .banner-chat ul li:nth-child(3){
+    margin-left: 83px;
+}
+.banner-bg .banner .banner-chat ul li:nth-child(4){
+    margin-left: 0px;
+}
+
+/*=========================
+banner css  end
+============================*/
+
 .about-bg{
-    height: 550px;
+    height: 485px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.about-bg .side-text{
+    position: absolute;
+    right: 125px;
+    top: 0;
+}
+.about-bg .side-text h3{
+    font-size: 86px;
 }
 .about-bg .about{
-    height: 550px;
+    height: 485px;
 }
 
-.about-bg .about .section-head span{
-    text-transform: uppercase;
-}
-
-.about-bg .about h2{
-    font-family: 'Montserrat-Bold';
-    font-size: 30px;
-    text-transform: uppercase;
-    color: #333;
-    margin-bottom: 40px;
-    text-align: center;
+.about-bg .about .about-image{
+    height: 485px;
+    float: left;
+    width: 380px;
+    margin-right:120px ;
     position: relative;
+    z-index: 0;
 }
-.about-bg .about h2::after {
-    content: '';
+
+.about-bg .about .about-image .abt-person{
     position: absolute;
-    width: 60px;
-    height: 3px;
-    background: #f38181;
-    margin-bottom: 45px;
-    top: 70px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 16px;
+    bottom: 4px;
+    z-index: 1;
 }
 
-.about-bg .about p {
-    font-family: 'Roboto', sans-serif;
-    margin-top: 40px;
-    margin-bottom: 50px;
-    font-size: 15px;
+.about-bg .about .about-image .abt-boder{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+
+.about-bg .about .about-text{
+    height: 485px;
+    float: left;
+    width: 570px;
+
+}
+
+.about-bg .about .about-text p {
+    font-family: 'ubu-rag';
+    font-size: 14px;
+    color: #444444;
     line-height: 24px;
-    text-align: center;
-    padding: 30px 105px;
+    margin-bottom: 20px;
 }
 
-.about-bg .about .about-gallery .images-items:nth-child(2){
-    margin-right: 30px;
+.about-bg .about .about-text .about-items{
+    width: 270px;
+    height: 85px;
+    float: left;
+}
+.about-bg .about .about-text .about-items:hover{
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0, 0.1);
+}
+
+.about-bg .about .about-text .about-items:nth-of-type(2){
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+.about-bg .about .about-text .about-items:nth-of-type(4){
     margin-left: 30px;
 }
 
-.about-bg .about .about-gallery .images-items{
-    width: 380px;
-    height: 250px;
-    float: left;
-    position: relative;
-    margin-bottom: 100px;
-}
-
-.about-bg .about .about-gallery .images-items::before{
-    content: '';
-    position: absolute;
-    height: 0px;
-    width: 10px;
-    background: #95e1d3;
-    right: -10px;
-    bottom: -10px;
-    z-index: 11;
-    visibility: hidden;
-    transition: all linear 0.4s;
-    -webkit-transition: all linear 0.4s;
-    -moz-transition: all linear 0.4s;
-    -ms-transition: all linear 0.4s;
-    -o-transition: all linear 0.4s;
-}
-
-.about-bg .about .about-gallery .images-items:hover::before{
-    visibility: visible;
-    height: 240px;
-}
-
-.about-bg .about .about-gallery .images-items::after{
-    content: '';
-    position: absolute;
-    width: 0px;
-    height: 10px;
-    background: #95e1d3;
-    bottom: -10px;
-    right: 0;
-    visibility: hidden;
-    transition: all linear 0.4s;
-    -webkit-transition: all linear 0.4s;
-    -moz-transition: all linear 0.4s;
-    -ms-transition: all linear 0.4s;
-    -o-transition: all linear 0.4s;
-}
-.about-bg .about .about-gallery .images-items:hover:after{
-    visibility: visible;
-    width: 370px;
-}
-
-.about-bg .about .about-gallery .images-items img{
-    width: 100%;
-    height: 100%;
-}
-
-.about-bg .about .about-gallery .images-items .user-icon{
-    position: absolute;
-    width: 100%;
-    height: 0%;
-    background:linear-gradient(to bottom, #e78182, #efd98a);
-    opacity: 0.9;
-    top: 0;
-    left: 0;
-    text-align: center;
-    visibility: hidden;
-    transition: all linear 0.4s;
-    -webkit-transition: all linear 0.4s;
-    -moz-transition: all linear 0.4s;
-    -ms-transition: all linear 0.4s;
-    -o-transition: all linear 0.4s;
-}
-
-.about-bg .about .about-gallery .images-items:hover .user-icon{
-    visibility: visible;
-    height: 100%;
-}
-
-.about-bg .about .about-gallery .images-items .user-icon i{
-    color: #fff;
-    margin-top: 105px;
-}
-
-.about-bg .about .about-gallery .images-items .user-icon h3{
-    color: #fff;
-    font-family: 'Montserrat-Bold';
-    font-size: 18px;
-    text-transform: uppercase;
-    margin-bottom: 100px;
-}
-
-/*============================
- about css end  
-===============================*/
-.award-bg{
-    height: 270px;
-    background: #95e1d3;
-    margin-bottom: 50px;
-}
-
-.award-bg .award{
-    height: 270px;
-}
-
-.award-bg .award .award-items{
-    width: 240px;
-    height: 100%;
-    text-align: center;
+.about-bg .about .about-text .about-items .abt-icon{
+    width: 70px;
+    height: 85px;
     float: left;
 }
-.award-bg .award .award-items h4{
-    font-family: 'Montserrat-Bold';
-    font-size: 72px;
-    color: #fff;
-    padding-top: 75px;
+
+.about-bg .about .about-text .about-items .abt-icon img{
+    padding-top: 20px;
 }
-.award-bg .award .award-items p{
-    font-family: 'Montserrat-rag';
+
+.about-bg .about .about-text .about-items .abt-dts{
+    width: 200px;
+    height: 85px;
+    float: left;
+}
+
+.about-bg .about .about-text .about-items .abt-dts p{
+    font-family: 'open sens' sans-serif;
+    font-weight: 600;
+    color: #444444;
     font-size: 14px;
-    color: #fff;
-    text-transform: uppercase;
+    padding-top: 20px;
+}
+.about-bg .about .about-text .about-items .abt-dts p span{
+    display: block;
+    font-size: 20px;
 }
 
-/*============================
- award css end  
-===============================*/
+/*=========================
+about css  end
+============================*/
 .service-bg{
-    height: 480px;
-}
-.service-bg .service{
-    height: 480px;
-}
-
-.service-bg .service .section-head span{
-    text-transform: uppercase;
-}
-.service-bg .service h2{
-    font-family: 'Montserrat-Bold';
-    font-size: 30px;
-    color: #333;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 70px;
+    height: 265px;
+    background: #f5f5f5;
+    padding: 60px 0px;
     position: relative;
 }
-
-.service-bg .service h2::after{
-    content: '';
+.service-bg .side-text{
     position: absolute;
-    width: 60px;
-    height: 3px;
-    background: #f38181;
-    margin-bottom: 45px;
-    top: 70px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    left: -27px;
+}
+.service-bg .side-text h3{
+    text-transform: uppercase;
+    font-family: 'abril';
+    font-size: 78px;
+}
+
+.service-bg .service{
+    height: 265px;
 }
 
 .service-bg .service .service-items{
-    height: 260px;
-    width: 100%;
-}
-
-.service-bg .service .service-items .service-section-1{
-    height: 130px;
-    width: 380px;
+    width: 370px;
+    height: 265px;
     float: left;
-    border-bottom: 1px solid #333;
-}
-.service-bg .service .service-items .service-section-1:nth-child(2){
-    margin-right: 30px;
-    margin-left: 30px;
-}
-
-.service-bg .service .service-items .service-section-1 .service-logo{
-    width: 90px;
-    height: 100%;
-    text-align: center;
-    float: left;
-}
-
-.service-bg .service .service-items .service-section-1 .service-content{
-    width: 100%;
-    height: 100%;
-}
-
-.service-bg .service .service-items .service-section-1 .service-content h4{
-    font-family: 'Montserrat-rag';
-    color: #333;
-    margin-bottom: 15px;
-
-}
-
-.service-bg .service .service-items .service-section-1 .service-content p{
-    font-family: 'Roboto', sans-serif;
-    color: #333;
-    padding-bottom: 45px;
-
-}
-
-
-
-
-
-
-
-
-.service-bg .service .service-items .service-section-2{
-    height: 130px;
-    width: 380px;
-    float: left;
-}
-.service-bg .service .service-items .service-section-2:nth-child(5){
-    margin-right: 30px;
-    margin-left: 30px;
-}
-
-.service-bg .service .service-items .service-section-2 .service-logo{
-    width: 90px;
-    height: 100%;
-    padding-top: 35px;
-    text-align: center;
-    float: left;
+    padding: 30px;
     box-sizing: border-box;
-}
-
-.service-bg .service .service-items .service-section-2 .service-content{
-    width: 100%;
-    height: 100%;
-}
-
-.service-bg .service .service-items .service-section-2 .service-content h4{
-    padding-top: 35px;
-    font-family: 'Montserrat-rag';
-    color: #333;
-    margin-bottom: 15px;
-
-}
-
-.service-bg .service .service-items .service-section-2 .service-content p{
-    font-family: 'Roboto', sans-serif;
-    color: #333;
-    padding-bottom: 45px;
-
-}
-
-
-/*============================
- award css end  
-===============================*/
-.unic-bg{
-    height: 850px;
-    background: url(../images/cover-unic-design.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 95px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
     position: relative;
 }
 
-.unic-bg::after{
+.service-bg .service .service-items:hover{
+    background: #ffffff;
+}
+
+.service-bg .service .service-items::after{
     content: '';
-    height: 850px;
-    width: 100%;
-    background: #fff;
-    opacity: 0.85;
     position: absolute;
     top: 0;
-    left: 0;
-    z-index: 8;
-}
-
-.unic-bg .unic{
-    height: 850px;
-    z-index: 10;
-    padding-top: 100px;
-    position: relative;
-}
-
-.unic-bg .unic h2{
-    font-family: 'Montserrat-Bold';
-    font-size: 30px;
-    color: #333;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.unic-bg .unic h2::after {
-    content: '';
-    position: absolute;
-    width: 60px;
-    height: 3px;
-    background: #f38181;
-    margin-bottom: 45px;
-    top: 213px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.unic-bg .unic .devices{
-    width: 100%;
-    /* height: 580; */
-    position: absolute;
-    top: 268px;
-    left: 0;
-    text-align: center;
-}
-
-.unic-bg .unic .devices .devices-items .mobi {
-    position: absolute;
-    bottom: -94px;
-    left: 729px;
-}
-
-/*============================
-unic design css end  
-===============================*/
-.wedo-bg{
-    height: 680px;
-}
-.wedo-bg .wedo{
-    height: 680px;
-    margin-bottom: 100px;
-}
-
-.wedo-bg .wedo h2{
-    text-transform: uppercase;
-    font-size: 30px;
-    font-family: 'Montserrat-Bold';
-    color: #333;
-    text-align: center;
-    margin-bottom: 40px;
-    position: relative;
-}
-
-.wedo-bg .wedo h2::after {
-    content: '';
-    position: absolute;
-    width: 60px;
-    height: 3px;
-    background: #f38181;
-    margin-bottom: 45px;
-    top: 70px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.wedo-bg .wedo p{
-    text-transform:capitalize;
-    text-align: center;
-    padding-top: 35px;
-    color: #333;
-    /* margin-bottom: 90px; */
-}
-.wedo-bg .wedo p::first-letter{
-    text-transform: uppercase;
-}
-
-.wedo-bg .wedo .wedo-items{
-    width: 100%;
-    height: 380px;
-    margin-top: 107px;
-}
-
-.wedo-bg .wedo .wedo-items .wedo-img{
-    width: 570px;
-    height: 380px;
-    float: left;
-    margin-right: 30px;
-}
-
-.wedo-bg .wedo .wedo-items .wedo-text{
-    width: 600px;
-    height: 380px;
-    float: left;
-}
-
-.wedo-bg .wedo .wedo-items .wedo-text .photography{
-    width: 100%;
-    height: 60px;
-    border: 1px solid rgba(51, 51, 51, 0.616);
-    margin-top: 6px;
-}
-.wedo-bg .wedo .wedo-items .wedo-text .photography:nth-of-type(1){
-    margin-top: 0px;
-}
-.wedo-bg .wedo .wedo-items .wedo-text .photography img{
-    padding-top: 15px;
-    float: left;
-    margin-right: 20px;
-}
-
-.wedo-bg .wedo .wedo-items .wedo-text .photography h4{
-    font-size: 14px;
-    font-family: 'Montserrat-rag';
-    color: #333;
-    line-height: 60px;
-    float: left;
-}
-.wedo-bg .wedo .wedo-items .wedo-text .photography i{
-    float: right;
-    line-height: 60px;
-    color: #333;
-    margin-right: 20px;
-    font-size: 14px;
-    cursor: pointer;
-}
-.wedo-bg .wedo .wedo-items .wedo-text .photography-text{
-    width: 100%;
-    height: 180px;
-    border: 1px solid rgba(51, 51, 51, 0.616);
-}
-
-.wedo-bg .wedo .wedo-items .wedo-text .photography-text p{
-    font-size: 15px;
-    line-height: 24px;
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-}
-
-
-
-/*============================
-wedo css end  
-===============================*/
-.jon-bg{
-    width: 100%;
-    height: 290px;
-    background: #f8f8f8;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-.jon-bg .jon{
-    height: 290px;
-
-    position: relative;
-    
-}
-
-.jon-bg .jon .right-mark{
-    position: absolute;
-    top: 50%;
     right: 0;
-    color: #333;
-}
-.jon-bg .jon .left-mark{
-    position: absolute;
-    top: 50%;
-    left: 0;
-    color: #333;
-}
-
-.jon-bg .jon .jon-logo{
-    height: 290px;
-    width: 238px;
-    margin-left: 73px;
-    text-align: center;
-    float: left;
-    
-}
-
-.jon-bg .jon .jon-logo img{
-    margin-top: 100px;
-    padding: 18px;
-    border: 3px solid #95e1d3;
-}
-
-.jon-bg .jon .jon-text{
-    height: 290px;
-    width: 770px;
-    float: left;
-}
-
-.jon-bg .jon .jon-text p {
-    font-size: 23px;
-    line-height: 36px;
-    color: #333;
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    padding-top: 91px;
-}
-
-.jon-bg .jon .jon-text h4{
-    text-transform: capitalize;
-    font-size: 24px;
-    color: #333;
-    font-family: 'KaushanScript-rag';
-    margin-left: 80px;
-    padding-top: 15px;
-    position: relative;
-}
-
-.jon-bg .jon .jon-text h4::after {
-    content: "";
-    position: absolute;
-    top: 36px;
-    left: -67px;
-    width: 60px;
-    height: 3px;
-    background: #f38181;
-}
-
-/*============================
-jon doe css end  
-===============================*/
-.team-bg{
-    height: 840px;
-}
-
-.team-bg .team{
-    height: 840px;
-    margin-bottom: 100px;
-}
-.team-bg .team h2{
-    text-transform: uppercase;
-    font-size: 30px;
-    font-family: 'Montserrat-Bold';
-    color: #333;
-    text-align: center;
-    padding-bottom: 80px;
-    position: relative;
-}
-.team-bg .team h2::after {
-    content: '';
-    position: absolute;
-    width: 60px;
-    height: 3px;
-    background: #f38181;
-    margin-bottom: 45px;
-    top: 70px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.team-bg .team p{
-    text-transform:capitalize;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    font-size: 14px;
-    color: #333;
- }
-
- .team-bg .team .team-gallery{
-     height: 545px;
-     margin-top: 90px;
- }
-
-
-
- .team-bg .team .team-gallery .gallery-items{
-     width: 380px;
-     height: 470px;
-     float: left;
-     position: relative;
-}
-
-.team-bg .team .team-gallery .gallery-items:nth-child(2){
-    margin-right: 30px;
-    margin-left: 30px;
-}
-
- .team-bg .team .team-gallery .gallery-items:hover .gallery-overlay{
-    visibility: visible;
-    height: 470px;
- }
-
- .team-bg .team .team-gallery .gallery-items .gallery-overlay{
-    position: absolute; 
-    background: linear-gradient(to bottom, #e78182, #efd98a);
-    opacity: 0.9;
-    width: 380px;
+    width: 3px;
     height: 0px;
-    top: 0;
-    left: 0;
-    visibility: hidden;
-    text-align: center;
+    background: linear-gradient(to top,#00bbff,#0066e7 );
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     transition: all linear 0.4s;
     -webkit-transition: all linear 0.4s;
     -moz-transition: all linear 0.4s;
     -ms-transition: all linear 0.4s;
     -o-transition: all linear 0.4s;
- }
-
- .team-bg .team .team-gallery .gallery-items .gallery-overlay ul li i {
-    font-size: 15px;
-    padding: 20px 20px;
-    color: #e78182;
-    line-height: 0px;
-    background: #efd98a;
-    margin-top: 225px;
-    cursor: pointer;
 }
 
-.team-bg .team .team-gallery .gallery-items .gallery-overlay ul li i:hover {
-    color: #fff;
-    background: #e78182;
-}
-
- .team-bg .team .team-gallery .gallery-items h4{
-     text-align: center;
-     margin-top: 15px;
-     padding-bottom: 25px;
-     font-family: 'Montserrat-Bold';
-     font-size: 14px;
-     text-transform: capitalize;
- }
- .team-bg .team .team-gallery .gallery-items p{
-    text-transform:capitalize;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    color: #333;
-    font-size: 14px;
- }
-
-
-/*============================
-team css end  
-===============================*/
-
- .brand-bg{
-     height: 250px;
-     background: #f8f8f8;
-     margin: 100px 0px;
- }
- .brand-bg .brand{
-     height: 250px;
- } 
- .brand-bg .brand .brand-items{
-     height: 250px;
-     width: 130px;
-     float: left;
-     margin-right: 84px;
-     line-height: 250px;
- }
-
- .brand-bg .brand .brand-items:last-child{
-     margin-right: 0px;
- }
-
-/*============================
-brand css end  
-===============================*/
-.our-work-bg{
-    height: 200px;
-    margin-bottom: 50px;
-}
-
-.our-work-bg .our-work{
-    height: 200px;
-}
- 
- .work-heading h2{
-    font-family: 'Montserrat-Bold';
-    font-size: 30px;
-    color: #333;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 40px;
-    position: relative;
- }
-
- .work-heading h2::after {
-    content: '';
-    position: absolute;
-    width: 60px;
-    height: 3px;
-    margin-bottom: 45px;
-    top: 70px;
-    left: 50%;
-    transform: translate(-50%, -50%);}
-.work-pragraph{
-    text-align: center;
-    padding-top: 40px;
-}
-
-.work-pragraph p{
-    text-transform:capitalize;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    font-size: 15px;
-    color: #333;
+.service-bg .service .service-items:hover::after{
+    height: 265px;
 }
 
 
-/*============================
-our work css end  
-===============================*/
-.work-bg{
-    height: 790px;
-}
-
-.work-bg .work-gallery-left{
-    height: 780px;
-    width: 50%;
-    float: left;
-    margin-bottom: 100px;
-}
-.work-bg .work-gallery-left .ll-part{
-    height: 100%;
-    width: 50%;
-    float: left;
-}
-.work-bg .work-gallery-left .ll-part .lu{
-    height: 50%;
-    width: 100%;
-    position: relative;
-}
-.work-bg .work-gallery-left .ll-part .ld{
-    height: 50%;
-    width: 100%;
-    position: relative;
-}
-.work-bg .work-gallery-left .r-part{
-    height: 100%;
-    width: 50%;
-    float: right;
-}
-.work-bg .r-part .ru{
-    height: 50%;
-    width: 100%;
-    position: relative;
-}
-.work-bg .r-part .rd{
-    height: 50%;
-    width: 100%;
-    position: relative;
-}
-.work-bg .work-gallery-right{
-    height: 780px;
-    width: 50%;
-    float: right;
-    margin-bottom: 100px;
-}
-.work-bg .work-gallery-right .l-part {
-    height: 100%;
-    width: 50%;
-    float: left;
-    position: relative;
-}
-.work-bg .work-gallery-right .r-part{
-    height: 100%;
-    width: 50%;
-    float: left;
-}
-
-
-.work-bg .overlay{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    background: linear-gradient(#f38181, #fce38a);
-    opacity: 0.9;
-    visibility: hidden;
-}
-.work-bg .overlay .image{
-    text-align: center;
-    line-height: 390px;
-}
-.work-bg .overlay .txt{
-    text-align: center;
-    margin-top: -160px;
-    line-height: 24px;
-}
-
-.work-bg .l-part .overlay .image{
-    text-align: center;
-    line-height: 780px;
-}
-.work-bg .l-part .overlay .txt{
-    text-align: center;
-    margin-top: -360px;
-    line-height: 24px;
-}
-
-
-.work-bg .overlay .txt .ttu{
-    text-transform: uppercase;
-    font-family: 'mont-bold';
-    color: #ffffff;
-}
-.work-bg .overlay .txt .ttc{
-    font-family: 'arial';
-    color: #ffffff;
-}
-.work-bg .overlay .txt .ttc::first-letter{
-    text-transform: uppercase;
-}
-
-
-.work-bg .lu:hover .overlay{
-    visibility: visible;
-}
-.work-bg .ld:hover .overlay{
-    visibility: visible;
-}
-.work-bg .ru:hover .overlay{
-    visibility: visible;
-}
-.work-bg .rd:hover .overlay{
-    visibility: visible;
-}
-.work-bg .l-part:hover .overlay{
-    visibility: visible;
-}
-
-/*============================
-our work gallery css end  
-===============================*/
-
-.earle-bg{
-    width: 100%;
-    height: 290px;
-    background: #f8f8f8;
-    margin-bottom: 100px;
-}
-
-.earle-bg .earle{
-    height: 290px;
-
-    position: relative;
-    
-}
-
-.earle-bg .earle .right-mark{
-    position: absolute;
-    top: 50%;
-    right: 0;
-    color: #333;
-}
-.earle-bg .earle .left-mark{
-    position: absolute;
-    top: 50%;
-    left: 0;
-    color: #333;
-}
-
-.earle-bg .earle .earle-logo{
-    height: 290px;
-    width: 238px;
-    margin-left: 73px;
-    text-align: center;
-    float: left;
-    
-}
-
-.earle-bg .earle .earle-logo img {
-    margin-top: 45px;
-    padding-right: 28px;
-}
-
-.earle-bg .earle .earle-text{
-    height: 290px;
-    width: 770px;
-    float: left;
-}
-
-.earle-bg .earle .earle-text p {
-    font-size: 23px;
-    line-height: 36px;
-    color: #333;
-    font-family: 'Roboto', sans-serif;
-    font-style: italic;
-    padding-top: 91px;
-}
-
-.earle-bg .earle .earle-text h4{
-    text-transform: capitalize;
+.service-bg .service .service-items h4{
+    font-family: 'abril';
     font-size: 24px;
-    color: #333;
-    font-family: 'KaushanScript-rag';
-    margin-left: 80px;
-    padding-top: 15px;
-    position: relative;
+    text-transform: capitalize;
+    color: #222;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
 
-.earle-bg .earle .earle-text h4::after {
-    content: "";
-    position: absolute;
-    top: 36px;
-    left: -67px;
-    width: 60px;
-    height: 3px;
-    background: #f38181;
+.service-bg .service .service-items p{
+    font-family: 'ubu-rag';
+    font-size: 14px;
+    line-height: 24px;
+    color: #222;
+}
+.service-bg .service .service-items:nth-child(2){
+    margin: 0px 30px;
 }
 
-/*============================
-our work gallery css end  
-===============================*/
-.happy-clnt-bg{
-    height: 830px;
-    background: url(../images/happy-client-cover.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-bottom: 100px;
-    position: relative;
-    z-index: -1;
-}
 
-.happy-clnt-bg::after{
-    content: "";
-    position: absolute;
-    height: 830px;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: #fff;
-    opacity: 0.8;
-    
-}
 
-.happy-clnt{
-    z-index: 1;
-    position: relative;
-}
-
-.happy-clnt .section-head{
-    padding-top: 100px;
-}
-
-.happy-clnt .clnt-heading h2{
-    font-family: 'Montserrat-Bold';
-    font-size: 30px;
-    color: #333;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.happy-clnt .clnt-heading  h2::after {
-    content: '';
-    position: absolute;
-    width: 60px;
-    height: 3px;
-    background: #f38181;
-    margin-bottom: 45px;
-    top: 213px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.clnt-bio{
-    width: 100%;
-    height: 440px;
+/*=========================
+service css  end
+============================*/
+.portfoliyo-bg{
+    height: 650px;
     margin-top: 100px;
 }
 
-.clnt-nmber{
-    width: 50%;
-    height: 440px;
-    float: left;
+.portfoliyo-bg .portfoliyo{
+    height: 165px;
 }
 
-.clnt-dtls{
-    width: 100%;
-    height: 50%;
-}
-
-.clnt-dtls h4{
-    font-family: 'Montserrat-rag';
-    font-size: 14px;
-    text-transform: capitalize;
-    margin-bottom: 5px;
-}
-
-.clnt-dtls span{
-    font-family:'Roboto', sans-serif;
-    font-style: italic;
-    font-size: 15px;
-    text-transform: capitalize;
-    position: relative;
-}
-
-.clnt-dtls span::after{
-    content: '';
-    position: absolute;
-    width: 60px;
-    height: 3px;
-    background: #f38181;
-    margin-bottom: 45px;
-    top: 40px;
-    left: 30%;
-    transform: translate(-50%, -50%);
-}
-
-.clnt-dtls p{
-    font-family:'Roboto', sans-serif;
-    color: #333;
-    font-size: 14px;
-    margin-top: 40px;
-
-}
-
-
-.clnt-picture{
-    width: 174px;
-    height: 100%;
-    text-align: right;
-    float: left;
-    
-}
-
-.clnt-picture img{
-    padding-top: 10px;
-    padding-right: 10px;
-}
-
-
-
-
-
-/*============================
-happy clicent css end  
-===============================*/
-.blog-bg{
-    height: 550px;
-}
-
-.blog-bg .blog{
-    height: 550px;
-}
-.blog-heading h2{
-    font-family: 'Montserrat-Bold';
-    font-size: 30px;
-    color: #333;
-    text-transform: uppercase;
+.portfoliyo-bg .portfoliyo .section-head{
     text-align: center;
-    margin-bottom: 40px;
+}
+.portfoliyo-bg .portfoliyo ul{
+    margin-top: 60px;
+    width: 570px;
+    margin: 0 auto;
+}
+
+.portfoliyo-bg .portfoliyo ul li{
+    float: left;
+    font-family: 'ubu-rag';
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #222222;
+    border-right: 1px solid #222;
+    padding: 0px 20px;
+}
+.portfoliyo-bg .portfoliyo ul li:last-child{
+    border-right: none;
+}
+
+.portfoliyo-bg .portfoliyo-gallery{
+    height: 370px;
+}
+
+.portfoliyo-bg .portfoliyo-gallery .portfoliyo-items{
+    width: 18.4%;
+    height: 100%;
+    float: left;
+    margin-right: 30px;
     position: relative;
+    overflow: hidden;
+}
+.portfoliyo-bg .portfoliyo-gallery .portfoliyo-center{
+    box-shadow: 0px 5px 10px 0px rgb(0, 0, 0,0.3);
 }
 
-.blog-heading  h2::after {
-    content: '';
-    position: absolute;
-    width: 60px;
-    height: 3px;
-    background: #f38181;
-    margin-bottom: 45px;
-    top: 60px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.portfoliyo-bg .portfoliyo-gallery .portfoliyo-items:last-of-type{
+    margin-right: 0;
 }
 
-.blog-dtls{
-    height: 400px;
+.portfoliyo-bg .portfoliyo-gallery .portfoliyo-items img{
     width: 100%;
+    height: 100%;
+}
+.portfoliyo-bg .portfoliyo-gallery .portfoliyo-items .portfolio-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0,0.5);
+    top: -100%;
+    left: 0;
+    transition: all linear 0.5s;
+    -webkit-transition: all linear 0.5s;
+    -moz-transition: all linear 0.5s;
+    -ms-transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
+}
+
+.portfoliyo-bg .portfoliyo-gallery .portfoliyo-items:hover .portfolio-overlay{
+    top: 0;
+}
+
+
+.portfoliyo-bg .portfoliyo-gallery .portfoliyo-items .portfolio-overlay .icon{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.portfoliyo-bg .portfoliyo-gallery .portfoliyo-items .portfolio-overlay .icon i{
+    width: 50px;
+    height: 50px;
+    background: #ffffff;
+    color: #00bbff;
+    font-size: 16px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+}
+
+.portfoliyo-bg .portfoliyo-gallery .portfoliyo-items .portfolio-overlay h4{
+    color: #ffffff;
+    font-family: 'ubu-rag';
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+
+.portfoliyo-bg .portfoliyo-btn{
+    height: 115px;
+    text-align: center;
+}
+.portfoliyo-bg .portfoliyo-btn .cta-btn{
     margin-top: 60px;
 }
-.blog-items{
-    width: 380px;
-    height: 400px;
-    float: left;
+
+/*=========================
+portfoliyo css  end
+============================*/
+
+.work-bg{
+    height: 385px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     position: relative;
 }
 
-.blog-items:nth-child(2){
+.work-bg .side-text {
+	position: absolute;
+	right: 125px;
+	top: -217px;
+}
+.work-bg .side-text h3{
+    font-size: 74px;
+}
+
+.work-bg .work{
+    height: 385px;
+}
+
+.work-bg .work .section-head{
+    text-align: center;
+    height: 100px;
+}
+
+.work-bg .work .work-items{
+ width: 370px;
+ height: 285px;
+ float: left;
+ position: relative;
+ overflow:hidden;
+ border-radius: 5px;
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+ -ms-border-radius: 5px;
+ -o-border-radius: 5px;
+}
+.work-bg .work .work-items::after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: -25px;
+    right: -25px;
+    background: linear-gradient(to right,#00bbff,#0066e7 );
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all linear 0.5s;
+    -webkit-transition: all linear 0.5s;
+    -moz-transition: all linear 0.5s;
+    -ms-transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
+    z-index: 10;
+}
+
+.work-bg .work .work-items:hover::after{
+    width: 100%;
+    height: 100%;
+    border-radius: 0%;
+    -webkit-border-radius: 0%;
+    -moz-border-radius: 0%;
+    -ms-border-radius: 0%;
+    -o-border-radius: 0%;
+    bottom: 0;
+    right: 0;
+}
+
+.work-bg .work .work-items:nth-of-type(3){
     margin: 0 30px;
 }
 
-.blog-date {
-	width: 60px;
-	height: 70px;
-    background-color: #95e1d3;;
-	text-align: right;
-	position: absolute;
-	bottom: 170px;
-	left: -11px;
-}
-.blog-date p{
-    font-family:'Roboto', sans-serif;
-    font-style: italic;
-    color: #fff;
-    padding: 25px 9px;
-    text-transform: capitalize;
-}
-.blog-date p span{
-    font-family: 'Montserrat-Bold';
-}
-
-.blog-items .blog-text h4{
-    text-transform: capitalize;
-    font-family: 'Montserrat-rag';
-    font-size: 16px;
-    color: #333;
-    margin-top: 10px;
-    margin-bottom: 15px;
-}
-
-.blog-items .blog-text p{
-
-    text-transform: capitalize;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    line-height: 24px;
-    color: #333;
-    margin-bottom: 30px;
-
-}
-
-.blog-items .blog-icon i{
-    padding: 0 10px;
-    color: #95e1d3;
-}
-
-.blog-items .blog-icon i span{
-    color: #333;
-    padding: 10px;
-}
-
-
-/*============================
-blog css end  
-===============================*/
-.map-bg{
-    height: 200px;
-    background: url(../images/map-banner.jpg);
-    margin: 50px 0;
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 1;
-}
-
-.map-bg::after{
-    content: '';
-    position: absolute;
-    height: 200px;
+.work-bg .work .work-items .work-head{
     width: 100%;
-    top: 0;
-    left: 0;
-    background: #fff;
-    opacity: 0.8;
-    z-index: 8;
-}
-
-.map-bg .map{
-    height: 200px;
+    height: 95px;
+    background: #f5f5f5;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     text-align: center;
-    z-index: 9;
+    transition: all linear 0.5s;
+    -webkit-transition: all linear 0.5s;
+    -moz-transition: all linear 0.5s;
+    -ms-transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
+}
+
+.work-bg .work .work-items:hover .work-head{
     position: relative;
+    z-index: 11;
+    background: transparent;
+    box-shadow: 0px 5px 10px 0px rgb(0, 0, 0,0.6);
 }
 
-.map-bg .map i {
-	color: #f38181;
-	font-size: 24px;
-	margin-top: 60px;
-	margin-bottom: 20px;
-    cursor: pointer;
+.work-bg .work .work-items .work-head img{
+    padding-top: 30px;
 }
-.map-bg .map h4{
-    font-family: 'Montserrat-Bold';
-    color: #f38181;
-    font-size: 24px;
-    text-transform: uppercase;
+.work-bg .work .work-items .work-text{
+    width: 100%;
+    height: 190px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+    transition: all linear 0.5s;
+    -webkit-transition: all linear 0.5s;
+    -moz-transition: all linear 0.5s;
+    -ms-transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
+}
+
+.work-bg .work .work-items:hover .work-text{
     position: relative;
+    z-index: 11;
+    background: transparent;
 }
 
-.map-bg .map h4::after{
-    content: '';
-    position: absolute;
-    width: 60px;
-    height: 3px;
-    background: #f38181;
-    top: 50px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.work-bg .work .work-items .work-text h5{
+    font-family: 'ubu-med';
+    text-transform: capitalize;
+    font-size: 20px;
+    line-height: 30px;
+    color: #444444;
+    padding-top: 25px;
+    margin-bottom: 5px;
+    transition: all linear 0.5s;
+    -webkit-transition: all linear 0.5s;
+    -moz-transition: all linear 0.5s;
+    -ms-transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
 }
 
+.work-bg .work .work-items:hover .work-text h5{
+    color: #ffffff;
+}
+.work-bg .work .work-items .work-text h6{
+    font-family: 'ubu-med';
+    text-transform: capitalize;
+    font-size: 16px;
+    line-height: 30px; 
+    color: #444444;
+    margin-bottom: 20px;
+    transition: all linear 0.5s;
+    -webkit-transition: all linear 0.5s;
+    -moz-transition: all linear 0.5s;
+    -ms-transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
+}
+.work-bg .work .work-items:hover .work-text h6{
+    color: #ffffff;
+}
+.work-bg .work .work-items .work-text p{
+    font-family: 'ubu-rag';
+    font-size: 14px;
+    line-height: 24px; 
+    color: #444444;
+    padding: 0 30px;
+    transition: all linear 0.5s;
+    -webkit-transition: all linear 0.5s;
+    -moz-transition: all linear 0.5s;
+    -ms-transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
+}
+.work-bg .work .work-items:hover .work-text p{
+    color: #ffffff;
+}
 
-
-/*============================
-map css end  
-===============================*/
-.footer-bg{
-    height: 440px;
-    margin-top: 100px; 
+/*=========================
+work css  end
+============================*/
+.funfact-bg{
+    background: linear-gradient(to right,#00bbff,#0066e7 );
+    height: 160px;
     margin-bottom: 100px;
 }
-.footer-bg .footer{
-    height: 440px;
-    background: #95e1d3;
+
+.funfact-bg .funfact{
+    height: 160px;
 }
 
-
-.footer-logo{
-    height: 440px;
-    width: 480px;
-    background: #e78182;
-    float: left;
+.funfact-bg .funfact .hire-me:nth-of-type(1){
+margin-right: 30px;
 }
-.footer-blog{
-    height: 440px;
+
+.funfact-bg .funfact .hire-me{
+    height: 160px;
     width: 370px;
-    background: #c44ef3;
     float: left;
-    margin-left: 30px;
+}
+
+.funfact-bg .funfact .hire-me h4{
+    color: #ffffff;
+    font-family: 'abril';
+    font-size: 32px;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+
+.funfact-bg .funfact .hire-me h4::first-letter{
+    text-transform: capitalize;
+}
+
+.funfact-bg .funfact .hire-me h4 span{
+    text-transform: capitalize;
+}
+
+.funfact-bg .funfact .hire-me .cta-btn:first-of-type{
+    margin-right: 11px;
+    transition: all linear 0.5s;
+    -webkit-transition: all linear 0.5s;
+    -moz-transition: all linear 0.5s;
+    -ms-transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
+}
+
+.funfact-bg .funfact .hire-me .cta-btn:hover{
+    background: #ffff;
+    color: #00bbff;
+}
+.funfact-bg .funfact .funfact-area{
+    height: 160px;
+    width: 770px;
+    float: left;
+}
+.funfact-bg .funfact .funfact-area .fun-items{
+    width: 190px;
+    height: 160px;
+    float: left;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.funfact-bg .funfact .funfact-area .fun-items:last-of-type{
+    margin-right: 0;
+}
+
+.funfact-bg .funfact .funfact-area .fun-items h5{
+    font-family: 'abril';
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+.funfact-bg .funfact .funfact-area .fun-items h5 span{
+    font-size: 24px;
+}
+.funfact-bg .funfact .funfact-area .fun-items img{
+    padding-top: 30px;
+}
+
+
+/*=========================
+funfact css  end
+============================*/
+.testimonial-bg{
+    height: 390px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.testimonial-bg .side-text {
+	position: absolute;
+	top: -58px;
+	left: -15px;
+}
+.testimonial-bg .side-text h3 {
+	text-transform: uppercase;
+	font-family: 'abril';
+	font-size: 61px;
+	margin-right: 100px;
+}
+
+
+.testimonial-bg .testimonial{
+    height: 390px;
+}
+.testimonial-bg .testimonial .section-head{ 
+    text-align: center;
+    height: 97px;
+}
+
+.testimonial-bg .testimonial .testimonial-items{
+    width: 570px;
+    height: 293px;
+    float: left;
+}
+
+.testimonial-bg .testimonial .testimonial-items:nth-of-type(2){
     margin-right: 30px;
 }
-.footer-instagram{
-    height: 440px;
-    width: 290px;
-    background: #81e797;
+
+.testimonial-bg .testimonial .testimonial-items .test-images{
+    width: 200px;
+    height: 293px;
     float: left;
 }
+.testimonial-bg .testimonial .testimonial-items .test-text{
+    width: 370px;
+    height: 293px;
+    float: left;
+    text-align: center;
+}
+.testimonial-bg .testimonial .testimonial-items .test-text h6{
+    font-family: 'abril';
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #222;
+    padding: 30px;
+}
 
-/*============================
-Footer css end  
-===============================*/
+.testimonial-bg .testimonial .testimonial-items .test-text ul li{
+    display: inline-block;
+    margin-bottom: 30px;
+    color: #febb1c;
+}
 
+.testimonial-bg .testimonial .testimonial-items .test-text h5{
+    font-family: 'ubu-med';
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #222;
+    margin-bottom: 12px;
+}
+.testimonial-bg .testimonial .testimonial-items .test-text p{
+    font-family: 'ubu-rag';
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #222;
+}
+
+
+
+/*=========================
+testmonial css  end
+============================*/
+.newslatter-bg{
+    height: 110px;
+    margin-bottom: 50px;
+}
+
+.newslatter-bg .newslatter{
+    height: 110px;
+}
+
+.newslatter-bg .newslatter .section-head{
+    text-align: center;
+    height: 55px;
+}
+.newslatter-bg .newslatter .newslatter-from{
+    height: 55px;
+}
+
+.newslatter-bg .newslatter .newslatter-from input{
+    border: 1px solid #f5f5f5;
+    height: 46px;
+    width: 490px;
+    margin-right: 25px;
+    border-radius: 23px;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    -ms-border-radius: 23px;
+    -o-border-radius: 23px;
+    box-shadow: 0px 5px 10px 0px rgb(0, 0, 0,0.8);
+    padding: 0 20px;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    color: #999999;
+    font-family: 'ubu-rag';
+    font-size: 13px;
+    font-style: italic;
+}
+
+.newslatter-bg .newslatter .newslatter-from button{
+    line-height: 46px;
+    background: linear-gradient(to right,#00bbff,#0066e7 );
+    padding: 0px 20px;
+    border: none;
+    outline: none;
+    color: #f5f5f5;
+    text-transform: capitalize;
+    font-family: 'ubu-med';
+    font-size: 20px;
+    border-radius: 22px;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    -ms-border-radius: 22px;
+    -o-border-radius: 22px;
+    cursor: pointer;
+    float: right;
+}
+
+/*=========================
+testmonial css  end
+============================*/
+.brand-bg{
+    height: 220px;
+}
+.brand-bg .brand{
+    height: 220px;
+    margin-bottom: 100px;
+}
+
+.brand-bg .brand .brand-items{
+    width: 25%;
+    height: 110px;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.brand-bg .brand .brand-items img{
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+}
+
+.brand-bg .brand .brand-items:hover img{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
+
+/*=========================
+brand css  end
+============================*/
+.footer-bg{
+    height: 495px;
+    background: #f5f5f5;
+    position: relative;
+}
+
+.footer-bg .side-text{
+    position: absolute;
+    right: 125px;
+    top: 0;
+}
+.footer-bg .side-text h3{
+    font-size: 84px;
+}
+
+
+.footer-bg::before{
+    content: '';
+    width: 40%;
+    height: 1px;
+    background: #ddd;
+    position: absolute;
+    left: 0;
+    bottom: 95px;
+}
+
+.footer-bg::after{
+    content: '';
+    width: 40%;
+    height: 1px;
+    background: #ddd;
+    position: absolute;
+    right: 0;
+    bottom: 95px;
+}
+.footer-bg .footer{
+    height: 495px;
+}
+.footer-bg .footer .footer-main{
+    height: 445px;
+    text-align: center;
+}
+.footer-bg .footer .footer-main img{
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+}
+
+.footer-bg .footer .footer-main p{
+    font-family: 'ubu-rag';
+    font-size: 14px;
+    color: #444444;
+    line-height: 24px;
+    padding: 0 300px;
+}
+
+.footer-bg .footer .footer-main h4{
+    color:#222222;
+    font-family: "abril";
+    padding-top: 50px;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+.footer-bg .footer .footer-main .contact-mail{
+    font-family: 'ubu-med';
+    font-size: 20px;
+}
+
+.footer-bg .footer .footer-main .footer-social a i{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #dddddd;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-size: 16px;
+    color: #999999;
+    transition: all linear 0.4s;
+    -webkit-transition: all linear 0.4s;
+    -moz-transition: all linear 0.4s;
+    -ms-transition: all linear 0.4s;
+    -o-transition: all linear 0.4s;
+    margin-right: 11px;
+}
+.footer-bg .footer .footer-main .footer-social a:last-of-type i{
+    margin-right: 0px;
+}
+.footer-bg .footer .footer-main .footer-social{
+    margin-top: 30px;
+}
+
+.footer-bg .footer .footer-main .footer-social a i:hover{
+    color: #ffffff; 
+    background: linear-gradient(to right,#00bbff,#0066e7 );
+    border: 1px solid transparent;
+}
+.footer-bg .footer .footer-main .footer-social a:hover{
+    text-decoration: none;
+}
+
+.footer-bg .footer .footer-copyright{
+    height: 50px;
+}
+.footer-bg .footer .footer-copyright p{
+    text-align: center;
+    font-family: 'ubu-rag';
+    font-size: 14px;
+    line-height: 50px;
+}
+
+.footer-bg .footer .footer-copyright p span{
+    text-transform: uppercase;
+}
+
+
+/*=========================
+footer css  end
+============================*/
 
 
